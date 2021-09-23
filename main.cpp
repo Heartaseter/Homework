@@ -23,7 +23,52 @@ int main() {
     cin>>address;
     cout <<"please enter the level you want"<<endl;
     cin>>level;
-
+    switch(level){
+        case 1:
+            cout<<"total num:"<<keyWordsReturn(address)<<endl;
+            break;
+        case 2:{
+            cout<<"total num:"<<keyWordsReturn(address)<<endl;
+            int a = switchReturn(address);
+            int howMany[a];
+            cout<<"switch num:"<<a<<endl;
+            caseReturn(howMany,a,address);
+            cout<<"case num :";
+            for (int i = 0; i < a; ++i) {
+                cout <<howMany[i]<<" ";
+            }
+            break;
+        }
+        case 3: {
+            cout << "total num:" << keyWordsReturn(address) << endl;
+            int a = switchReturn(address);
+            int howMany[a];
+            cout << "switch num:" << a << endl;
+            caseReturn(howMany, a, address);
+            cout << "case num :";
+            for (int i = 0; i < a; ++i) {
+                cout << howMany[i] << " ";
+            }
+            cout<<endl;
+            cout<<"if-else num: "<<if_Return(address)-elseIfReturn(address)<<endl;
+            break;
+        }
+        case 4:{
+            cout << "total num:" << keyWordsReturn(address) << endl;
+            int a = switchReturn(address);
+            int howMany[a];
+            cout << "switch num:" << a << endl;
+            caseReturn(howMany, a, address);
+            cout << "case num :";
+            for (int i = 0; i < a; ++i) {
+                cout << howMany[i] << " ";
+            }
+            cout<<endl;
+            int ElseReturn = elseIfReturn(address);
+            cout<<"if-else num: "<<if_Return(address)-ElseReturn<<endl;
+            cout<<"if-elseif-if num: "<<ElseReturn<<endl;
+            break;
+        }
 
     }
 
